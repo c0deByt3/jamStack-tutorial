@@ -2,4 +2,4 @@ Resume from: 58:40 mins
 
 push to Git
 
-Test sync
+Page served through GitHub: https://c0debyt3.github.io/jamStack-tutorial/
