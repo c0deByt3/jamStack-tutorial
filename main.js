@@ -1,3 +1,5 @@
+//  Good vibe options
+
 const vibes = [
     "...and you are awesome!",
     "...have a wonderful day!",
@@ -5,9 +7,15 @@ const vibes = [
     '...and so is this puppy!'
 ];
 
+// Select a random vibe
+
 var vibe = vibes[Math.floor(Math.random() * Math.floor(vibes.length))];
 
+// Display random vibe in browser
+
 document.querySelector(".vibe").append(vibe);
+
+//  Display puppy picture if puppy vibe
 
 if (vibe.includes('puppy')) {
     var changeElem = document.getElementsByClassName('love');
