@@ -5,7 +5,6 @@ module.exports = function(config) {
         dir: {
             input: "src",
             output: "dist",
-            pathPrefix: "/jamStack-tutorial/"
         }
     };
 };
