@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "env NODE_ENV=production npx eleventy --pathprefix 'jamStack-tutorial'",
     "start": "eleventy --serve",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
