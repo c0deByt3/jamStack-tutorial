@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "homepage": "https://c0debyt3.github.io/jamStack-tutorial/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy",
@@ -21,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/c0deByt3/jamStack-tutorial/issues"
   },
-  "homepage": "https://github.com/c0deByt3/jamStack-tutorial#readme",
+  "homepage": "https://c0debyt3.github.io/jamStack-tutorial",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1"
   },
