@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy",
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/c0deByt3/jamStack-tutorial#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
