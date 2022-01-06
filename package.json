@@ -1,4 +1,5 @@
 {
+  "homepage": "https://c0debyt3.github.io/jamStack-tutorial",
   "name": "jamstack-tutorial",
   "version": "1.0.0",
   "description": "",
@@ -20,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/c0deByt3/jamStack-tutorial/issues"
   },
-  "homepage": "https://c0debyt3.github.io/jamStack-tutorial",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1"
   },
