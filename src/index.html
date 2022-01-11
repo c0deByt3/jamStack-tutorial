@@ -5,14 +5,22 @@ layout: base.html
     
     <div class="container">
         <a href="{{ 'about/' | url }}">About This Page</a></header>
+
         <h1>JamStack Example</h1>
+
         <button onclick="location.reload();">New Inspiration!</button>
+
         <div class="vibe">
             You are great          
         </div>
         <div class="love">
             &hearts;
         </div>
+
+        <ul id="news">
+            <li>{{ article.title }}</li>
+        </ul>
+
     </div>
     <script src="js/main.js"></script>
 
