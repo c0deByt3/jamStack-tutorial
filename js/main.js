@@ -22,3 +22,9 @@ if (vibe.includes('puppy')) {
     changeElem[0].innerHTML = '<img alt="puppy sitting" height="300" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/French_bulldog_puppy_fawn.jpg">';
 };
 
+// API data display (Access JSON Data)
+
+let news = fetch('/_data/news.json')
+.then(response => response.json())
+.then(data => console.log(data));
+
