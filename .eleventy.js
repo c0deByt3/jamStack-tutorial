@@ -8,7 +8,7 @@ module.exports = function(config) {
     //     }
     // }
     
-    config.addPassthroughCopy('src/_data');
+    config.addPassthroughCopy('src/info');
     config.addPassthroughCopy('src/js');
 
     return {

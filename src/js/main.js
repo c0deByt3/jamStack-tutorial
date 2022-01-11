@@ -24,7 +24,7 @@ if (vibe.includes('puppy')) {
 
 // API data display (Access JSON Data)
 
-let news = fetch('../_data/news.json')
+let news = fetch('../info/news.json')
 .then(response => response.json())
 .then(data => console.log(data));
 

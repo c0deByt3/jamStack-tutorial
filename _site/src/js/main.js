@@ -24,7 +24,7 @@ if (vibe.includes('puppy')) {
 
 // API data display
 
-// let file = fetch("_data/news.json");
+// let file = fetch("info/news.json");
 
 // async function getText(file) {
 //     let myObject = await fetch(file);
@@ -32,6 +32,6 @@ if (vibe.includes('puppy')) {
 //     console.log(myText);
 //   }
 
-let news = fetch('/_data/news.json')
+let news = fetch('/info/news.json')
 .then(response => response.text())
 .then(data => console.log(data));
