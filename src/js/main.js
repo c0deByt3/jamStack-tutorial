@@ -30,9 +30,11 @@ if (vibe.includes('puppy')) {
 
 // API data from remote source
 
-var url = 'https://newsapi.org/v2/top-headlines?' +
-          'country=au&' +
-          'apiKey=e9627a1ddb32469e8294a6a16b01a958';
+// var url = 'https://newsapi.org/v2/top-headlines?' +
+//           'country=au&' +
+//           'apiKey=e9627a1ddb32469e8294a6a16b01a958';
+
+var url = 'https://api.thenewsapi.com/v1/news/top?locale=au&language=en&api_token=glPTeZxhvgaTw3v8F8XgUE8buXndREAo0G0Cd093';
 
 var req = new Request(url);
 
@@ -45,15 +47,16 @@ var dataReq = fetch(req)
 
 // Handle info once returned
 
-var randomNews = document.getElementById('news').getElementsByTagName('a');
+var newsTitle = document.getElementById('news').getElementsByTagName('a');
+var newsDesc = document.getElementById('news').getElementsByClassName('desc');
 
 var jsonData = dataReq.then(function(result) {
-    for (let i in result.articles) {
-        let newsStory = result.articles[Math.floor(Math.random() * Math.floor(result.articles.length))];
+    for (let i in result.data) {
+        let newsStory = result.data[Math.floor(Math.random() * Math.floor(result.data.length))];
         console.log(newsStory);
-        randomNews[0].innerHTML = newsStory.title;
-        randomNews[0].setAttribute("href", newsStory.url);
-        randomNews[0].setAttribute("target", "_blank");
+        newsTitle[0].innerHTML = newsStory.title;
+        newsTitle[0].setAttribute("href", newsStory.url);
+        newsTitle[0].setAttribute("target", "_blank");
+        newsDesc[0].innerHTML = newsStory.description;
     }
-})
-
+});
