@@ -22,7 +22,10 @@
     "url": "https://github.com/c0deByt3/jamStack-tutorial/issues"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "dotenv": "^14.1.0",
+    "requirejs": "^2.3.6",
+    "save": "^2.4.0"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"

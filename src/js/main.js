@@ -1,3 +1,8 @@
+// import 'dotenv/config';
+// import express from 'express';
+
+import {dotEnv} from '../node_modules/dotenv/config.js';
+
 //  Good vibe options
 
 const vibes = [
@@ -22,6 +27,10 @@ if (vibe.includes('puppy')) {
     changeElem[0].innerHTML = '<img alt="puppy sitting" height="300" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/French_bulldog_puppy_fawn.jpg">';
 };
 
+var apiKey = process.env.API_KEY;
+
+console.log(apiKey);
+
 // API data display (Access JSON Data) - inrenal JSON file
 
 // let news = fetch('./info/news.json')
@@ -34,7 +43,7 @@ if (vibe.includes('puppy')) {
 //           'country=au&' +
 //           'apiKey=e9627a1ddb32469e8294a6a16b01a958';
 
-var url = 'https://api.thenewsapi.com/v1/news/top?locale=au&language=en&api_token=glPTeZxhvgaTw3v8F8XgUE8buXndREAo0G0Cd093';
+var url = `https://api.thenewsapi.com/v1/news/top?locale=au&language=en&api_token=${process.env.API_KEY}`;
 
 var req = new Request(url);
 
